@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(255, 243, 14, 0.867);
+    color: rgb(17, 2, 82);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    color: blueviolet;
+    font-size: 8rem;
+    text-align: center;
+    opacity: 0.8;
+}
+
+form {
+    box-shadow: 0 4px 10px black;
+    max-width: 100%;
+    width: 400px;
+}
+
+.input {
+    border: none;
+    color: #444;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    display: block;
+    width: 100%;
+}
+
+input::placeholder {
+    color: rgba(112, 108, 108, 0.862)
+}
+
+.input:focus {
+    outline-color: blueviolet;
+}
+
+.todos {
+    background-color: whitesmoke;
+    padding: o;
+    margin: 0;
+    list-style-type: none;
+    /* removes bullet points */
+}
+
+.todos li {
+    border-top: 1px solid rgb(241, 233, 233)y;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 1rem .1rem;
+}
+
+.todos li.completed {
+    color: gray;
+    cursor: pointer;
+    text-decoration: line-through;
+}
+
+small {
+    color: rgb(0, 123, 123);
+    padding-top: 30px;
+    text-align: center;
+}

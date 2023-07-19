@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+}
+
+img {
+    width: 500px;
+    /* height: 500px; */
+    object-fit: cover;
+    /* cover - how an object should be resized to fit in a container */
+}
+
+.carousel {
+    box-shadow: 2px 2px 2px rgb(155, 141, 141);
+    height: 500px;
+    width: 500px;
+    overflow: hidden;
+    border-radius: 4%;
+    /* hidden - to remove the scroll bar */
+}
+
+.image-container {
+    display: flex;
+    transform: translateX(0);
+    /* slideshow in x axis (slide to right side) */
+    transition: transform 0.5s ease-in-out;
+    /* slide after 0.5 sec in smoothness (ease-in-out) */
+    /* transform can be used to rotate the image by giving degrees in translate(degree) */
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    background-color: rgb(3, 3, 169);
+    color: whitesmoke;
+    border: none;
+    padding: 0.5rem;
+    /* rem- root element's (default) font size. related to <html lang="en"> */
+    width: 49.5%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.btn:hover {
+    opacity: 0.8;
+    /*when hover over reduce opacity*/
+}
+
+.btn:focus {
+    outline: none;
+    /* no ouline on focusing on the button */
+}
